@@ -17,7 +17,7 @@ st.write("This app is to increase your productivity.")
 
 
 for index, todo in enumerate(todos):
-    checkbox = st.checkbox(todo, key="0")
+    checkbox = st.checkbox(todo, key=todo)
     if checkbox:
         print(checkbox)
         todos.pop(index)
